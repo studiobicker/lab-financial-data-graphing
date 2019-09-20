@@ -1,0 +1,36 @@
+<h1>{{title}}</h1>
+<div class="container">
+  <div class="col">
+    <h2>Filters</h2>
+    <form id="chart-form">
+      <div class="row">
+        <label>From:</label>
+        <input type="date" id="startdate">
+        <label>To:</label>
+        <input type="date" id="enddate">
+      </div>
+      <div class="row">
+        <label>Currency</label>
+        <select id="currSelect">
+          <option value="USD">US Dollar</option>
+          <option value="EUR">Euro</option>
+          <option value="GBP">British Pound</option>
+        </select>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div class="col">
+    <h2>Values</h2>
+    <div class="row">
+      Max: <span id="maxValue"></span>
+    </div>
+    <div class="row">
+      Min:
+      <span id="minValue"></span>
+    </div>
+  </div>
+</div>
+
+
+<canvas id="bcChart" width="400" height="400"></canvas>
